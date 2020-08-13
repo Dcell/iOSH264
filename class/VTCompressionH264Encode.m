@@ -48,21 +48,17 @@
     VTSessionSetProperty(encodingSession, kVTCompressionPropertyKey_AllowFrameReordering, allowFrameReordering);
     
     // 设置关键帧（GOPsize)间隔
-    int frameInterval = 10;
-    CFNumberRef  frameIntervalRef = CFNumberCreate(kCFAllocatorDefault, kCFNumberIntType, &frameInterval);
+    CFNumberRef  frameIntervalRef = CFNumberCreate(kCFAllocatorDefault, kCFNumberIntType, &_frameInterval);
     VTSessionSetProperty(encodingSession, kVTCompressionPropertyKey_MaxKeyFrameInterval, frameIntervalRef);
     // 设置期望帧率
-    int fps = self.fps;
-    CFNumberRef  fpsRef = CFNumberCreate(kCFAllocatorDefault, kCFNumberIntType, &fps);
+    CFNumberRef  fpsRef = CFNumberCreate(kCFAllocatorDefault, kCFNumberIntType, &_fps);
     VTSessionSetProperty(encodingSession, kVTCompressionPropertyKey_ExpectedFrameRate, fpsRef);
     //设置码率，上限，单位是bps
-    int bitRate = self.width * self.height * 3 * 4 * 8;
-    CFNumberRef bitRateRef = CFNumberCreate(kCFAllocatorDefault, kCFNumberSInt32Type, &bitRate);
+    CFNumberRef bitRateRef = CFNumberCreate(kCFAllocatorDefault, kCFNumberSInt32Type, &_bitRate);
     VTSessionSetProperty(encodingSession, kVTCompressionPropertyKey_AverageBitRate, bitRateRef);
     //设置码率，均值，单位是byte
-    int bitRateLimit = self.width * self.height * 3 * 4;
-    CFNumberRef bitRateLimitRef = CFNumberCreate(kCFAllocatorDefault, kCFNumberSInt32Type, &bitRateLimit);
-    VTSessionSetProperty(encodingSession, kVTCompressionPropertyKey_DataRateLimits, bitRateLimitRef);
+    CFNumberRef dataRateLimitRef = CFNumberCreate(kCFAllocatorDefault, kCFNumberSInt32Type, &_dataRateLimit);
+    VTSessionSetProperty(encodingSession, kVTCompressionPropertyKey_DataRateLimits, dataRateLimitRef);
     
     // Tell the encoder to start encoding
     VTCompressionSessionPrepareToEncodeFrames(encodingSession);
@@ -169,7 +165,7 @@ void outputCallback(void *outputCallbackRefCon, void *sourceFrameRefCon, OSStatu
                                                           NULL, NULL, &flags);
     // Check for error
     if (statusCode != noErr) {
-        NSLog(@"VTCompressionSessionEncodeFrame error ");
+        NSLog(@"VTCompressionSessionEncodeFrame error:%d ",statusCode);
     }
     [self.lock unlock];
 }
@@ -192,6 +188,7 @@ void outputCallback(void *outputCallbackRefCon, void *sourceFrameRefCon, OSStatu
         CFRelease(encodingSession);
         encodingSession = NULL;
     }
+    frameCount = 0;
     [self.lock unlock];
 }
 
