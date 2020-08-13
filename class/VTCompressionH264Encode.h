@@ -16,7 +16,7 @@ typedef enum : NSUInteger {
     FrameType_PFreme,
 } FrameType;
 
-@protocol H264EncodeDelegate <NSObject>
+@protocol VTCompressionH264EncodeDelegate <NSObject>
 
 -(void)dataCallBack:(NSData *)data frameType:(FrameType)frameType;
 -(void)spsppsDataCallBack:(NSData *)sps pps:(NSData *)pps;
@@ -27,7 +27,11 @@ typedef enum : NSUInteger {
 @property(nonatomic,assign) int width;
 @property(nonatomic,assign) int height;
 @property(nonatomic,assign) int fps;
-@property(nonatomic,weak) id<H264EncodeDelegate> delegate;
+@property(nonatomic,assign) int frameInterval;
+@property(nonatomic,assign) int bitRate;
+@property(nonatomic,assign) int dataRateLimit;
+
+@property(nonatomic,weak) id<VTCompressionH264EncodeDelegate> delegate;
 @property(nonatomic,assign) BOOL allowFrameReordering; //是否启用了帧重新排序，有些不支持B帧解析，则需要关闭B帧
 
 
