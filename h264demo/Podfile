@@ -1,0 +1,7 @@
+platform :ios, '8.0'
+use_frameworks!
+#use_modular_headers！
+
+target "iOSH264Demo" do
+    pod 'iOSH264Compression', :path => ".."
+end
