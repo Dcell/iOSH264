@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.version      = "1.0.0"
   s.summary      = "iOS encode & decode use by VideoToolBox"
   s.description  = <<-DESC
-                   To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/SwiftLvDB
+                   iOS encode & decode use by VideoToolBox,DetailInfo:https://github.com/Code-Dogs/iOSH264
                    DESC
   s.homepage     = "https://github.com/Code-Dogs/iOSH264"
   s.license      = "MIT"
