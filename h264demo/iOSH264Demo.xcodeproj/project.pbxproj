@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9BDF16C524E4DDB400AA2B0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDF16C424E4DDB400AA2B0F /* AppDelegate.swift */; };
+		9BDF16C724E4DDB400AA2B0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDF16C624E4DDB400AA2B0F /* SceneDelegate.swift */; };
+		9BDF16C924E4DDB400AA2B0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDF16C824E4DDB400AA2B0F /* ViewController.swift */; };
+		9BDF16CC24E4DDB400AA2B0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BDF16CA24E4DDB400AA2B0F /* Main.storyboard */; };
+		9BDF16CE24E4DDB600AA2B0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BDF16CD24E4DDB600AA2B0F /* Assets.xcassets */; };
+		9BDF16D124E4DDB600AA2B0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BDF16CF24E4DDB600AA2B0F /* LaunchScreen.storyboard */; };
+		9BDF16DB24E5341A00AA2B0F /* AAPLEAGLLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDF16DA24E5341A00AA2B0F /* AAPLEAGLLayer.m */; };
+		C015418A4031755266657EA6 /* Pods_iOSH264Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA9D1CC5D82AD87DCFBB4BC /* Pods_iOSH264Demo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		889526F7C2F457DB16E84FD2 /* Pods-iOSH264Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSH264Demo.debug.xcconfig"; path = "Target Support Files/Pods-iOSH264Demo/Pods-iOSH264Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		9BDF16C124E4DDB400AA2B0F /* iOSH264Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSH264Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BDF16C424E4DDB400AA2B0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9BDF16C624E4DDB400AA2B0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9BDF16C824E4DDB400AA2B0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9BDF16CB24E4DDB400AA2B0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9BDF16CD24E4DDB600AA2B0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BDF16D024E4DDB600AA2B0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9BDF16D224E4DDB600AA2B0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BDF16D824E5341900AA2B0F /* iOSH264Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSH264Demo-Bridging-Header.h"; sourceTree = "<group>"; };
+		9BDF16D924E5341A00AA2B0F /* AAPLEAGLLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLEAGLLayer.h; sourceTree = "<group>"; };
+		9BDF16DA24E5341A00AA2B0F /* AAPLEAGLLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLEAGLLayer.m; sourceTree = "<group>"; };
+		E442CC15106F605A16F9F513 /* Pods-iOSH264Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSH264Demo.release.xcconfig"; path = "Target Support Files/Pods-iOSH264Demo/Pods-iOSH264Demo.release.xcconfig"; sourceTree = "<group>"; };
+		FFA9D1CC5D82AD87DCFBB4BC /* Pods_iOSH264Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSH264Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BDF16BE24E4DDB400AA2B0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C015418A4031755266657EA6 /* Pods_iOSH264Demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BD3AA88B54F5DFB95CEC5BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				889526F7C2F457DB16E84FD2 /* Pods-iOSH264Demo.debug.xcconfig */,
+				E442CC15106F605A16F9F513 /* Pods-iOSH264Demo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9BDF16B824E4DDB400AA2B0F = {
+			isa = PBXGroup;
+			children = (
+				9BDF16C324E4DDB400AA2B0F /* iOSH264Demo */,
+				9BDF16C224E4DDB400AA2B0F /* Products */,
+				1BD3AA88B54F5DFB95CEC5BD /* Pods */,
+				9DF54D622F16FD09F4855668 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9BDF16C224E4DDB400AA2B0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BDF16C124E4DDB400AA2B0F /* iOSH264Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BDF16C324E4DDB400AA2B0F /* iOSH264Demo */ = {
+			isa = PBXGroup;
+			children = (
+				9BDF16D924E5341A00AA2B0F /* AAPLEAGLLayer.h */,
+				9BDF16DA24E5341A00AA2B0F /* AAPLEAGLLayer.m */,
+				9BDF16C424E4DDB400AA2B0F /* AppDelegate.swift */,
+				9BDF16C624E4DDB400AA2B0F /* SceneDelegate.swift */,
+				9BDF16C824E4DDB400AA2B0F /* ViewController.swift */,
+				9BDF16CA24E4DDB400AA2B0F /* Main.storyboard */,
+				9BDF16CD24E4DDB600AA2B0F /* Assets.xcassets */,
+				9BDF16CF24E4DDB600AA2B0F /* LaunchScreen.storyboard */,
+				9BDF16D224E4DDB600AA2B0F /* Info.plist */,
+				9BDF16D824E5341900AA2B0F /* iOSH264Demo-Bridging-Header.h */,
+			);
+			path = iOSH264Demo;
+			sourceTree = "<group>";
+		};
+		9DF54D622F16FD09F4855668 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFA9D1CC5D82AD87DCFBB4BC /* Pods_iOSH264Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BDF16C024E4DDB400AA2B0F /* iOSH264Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BDF16D524E4DDB600AA2B0F /* Build configuration list for PBXNativeTarget "iOSH264Demo" */;
+			buildPhases = (
+				0C7ED7C6903D81E2F07E7F5A /* [CP] Check Pods Manifest.lock */,
+				9BDF16BD24E4DDB400AA2B0F /* Sources */,
+				9BDF16BE24E4DDB400AA2B0F /* Frameworks */,
+				9BDF16BF24E4DDB400AA2B0F /* Resources */,
+				F6CCCEF6F992B59FEC1E5830 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSH264Demo;
+			productName = iOSH264Demo;
+			productReference = 9BDF16C124E4DDB400AA2B0F /* iOSH264Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BDF16B924E4DDB400AA2B0F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "code-dogs";
+				TargetAttributes = {
+					9BDF16C024E4DDB400AA2B0F = {
+						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
+					};
+				};
+			};
+			buildConfigurationList = 9BDF16BC24E4DDB400AA2B0F /* Build configuration list for PBXProject "iOSH264Demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9BDF16B824E4DDB400AA2B0F;
+			productRefGroup = 9BDF16C224E4DDB400AA2B0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BDF16C024E4DDB400AA2B0F /* iOSH264Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9BDF16BF24E4DDB400AA2B0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BDF16D124E4DDB600AA2B0F /* LaunchScreen.storyboard in Resources */,
+				9BDF16CE24E4DDB600AA2B0F /* Assets.xcassets in Resources */,
+				9BDF16CC24E4DDB400AA2B0F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C7ED7C6903D81E2F07E7F5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSH264Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6CCCEF6F992B59FEC1E5830 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSH264Demo/Pods-iOSH264Demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSH264Demo/Pods-iOSH264Demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSH264Demo/Pods-iOSH264Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BDF16BD24E4DDB400AA2B0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BDF16C924E4DDB400AA2B0F /* ViewController.swift in Sources */,
+				9BDF16C524E4DDB400AA2B0F /* AppDelegate.swift in Sources */,
+				9BDF16DB24E5341A00AA2B0F /* AAPLEAGLLayer.m in Sources */,
+				9BDF16C724E4DDB400AA2B0F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9BDF16CA24E4DDB400AA2B0F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BDF16CB24E4DDB400AA2B0F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9BDF16CF24E4DDB600AA2B0F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BDF16D024E4DDB600AA2B0F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9BDF16D324E4DDB600AA2B0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9BDF16D424E4DDB600AA2B0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9BDF16D624E4DDB600AA2B0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 889526F7C2F457DB16E84FD2 /* Pods-iOSH264Demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R7KW8SEKKF;
+				INFOPLIST_FILE = iOSH264Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.code-dogs.iOSH264Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSH264Demo/iOSH264Demo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9BDF16D724E4DDB600AA2B0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E442CC15106F605A16F9F513 /* Pods-iOSH264Demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R7KW8SEKKF;
+				INFOPLIST_FILE = iOSH264Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.code-dogs.iOSH264Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSH264Demo/iOSH264Demo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BDF16BC24E4DDB400AA2B0F /* Build configuration list for PBXProject "iOSH264Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BDF16D324E4DDB600AA2B0F /* Debug */,
+				9BDF16D424E4DDB600AA2B0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BDF16D524E4DDB600AA2B0F /* Build configuration list for PBXNativeTarget "iOSH264Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BDF16D624E4DDB600AA2B0F /* Debug */,
+				9BDF16D724E4DDB600AA2B0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9BDF16B924E4DDB400AA2B0F /* Project object */;
+}
