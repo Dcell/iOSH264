@@ -41,7 +41,7 @@ vTCompressionH264.encode(by: sampleBuffer)
 ```
 vTCompressionH264.invalidate()
 ```
-# H264 Decode
+## H264 Decode
 1.Create VTCompressionH264Decode
 
 ```
@@ -60,6 +60,7 @@ vTCompressionH264Decode.delegate = self
 vTCompressionH264Decode.decode(byteHeaderData)
 ```
 
-
+# Demo
+![](PXCQ9662.mp4)
 # License
 iOSH264 is released under the MIT license. See LICENSE for details.
