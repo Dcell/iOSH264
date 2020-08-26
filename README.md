@@ -61,6 +61,6 @@ vTCompressionH264Decode.decode(byteHeaderData)
 ```
 
 # Demo
-![](PXCQ9662.mp4)
+![](Aug-26-2020 10-37-11.gif)
 # License
 iOSH264 is released under the MIT license. See LICENSE for details.
